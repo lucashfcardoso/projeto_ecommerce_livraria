@@ -91,12 +91,12 @@ export function main() {
                     switch(tipo){
                         case 1:
                             genero = readlinesync.question("Digite o genero do livro: ");
-                            livrosController.cadastrar(new Novos (id, nome, tipo, preco, genero));
+                            livrosController.atualizar(new Novos (id, nome, tipo, preco, genero));
                         break;
 
                         case 2:
                             avaria = readlinesync.question("Informe se o livro possui avaria: ");
-                            livrosController.cadastrar(new Usados (id, nome, tipo, preco, avaria));
+                            livrosController.atualizar(new Usados (id, nome, tipo, preco, avaria));
                         break;
                     }
                 } else 
